@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./styles.css";
-import icon from "./keiko.jpeg";
+import "./App.css";
+import icon from "./assets/keiko.jpeg";
 
 function App() {
   const [schedule, setSchedule] = useState([]);
