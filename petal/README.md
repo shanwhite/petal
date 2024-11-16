@@ -1,4 +1,4 @@
-# Getting the project to run
-(npm create vite@latest >> petal >> React & JavaScript)<br />
+# To run Petal:
+npm install<br />
 cd petal <br />
 npm run dev
