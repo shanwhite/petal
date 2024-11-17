@@ -1,5 +1,4 @@
 ## To run Petal:
-(if needed: npm install vite)<br />
-npm install<br />
 cd petal <br />
+npm install<br />
 npm run dev
