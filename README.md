@@ -7,4 +7,4 @@ Its key features include a schedule for feeding and exercises, reminders for med
 ## To run Petal:
 cd petal <br />
 npm install<br />
-npm run dev
+npm start
