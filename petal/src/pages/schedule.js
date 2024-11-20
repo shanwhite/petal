@@ -13,9 +13,7 @@ const Schedule = () => {
 
   return (
       <div>
-         <h3>
-            {" "} Using the <i> react-calender </i> library to create calender in React JS{" "}
-         </h3>
+        <br />
          <Calendar onChange = {changeValue} value = {date} />
          <p>The selected date is - {date.toLocaleDateString()}</p>
       </div>
