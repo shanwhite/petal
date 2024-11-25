@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+import "../index.css";
 
+function Schedule() {
+   const [date, changeDate] = useState(new Date());
+   function changeValue(val) {
+      changeDate(val);
+   }
 
-const Schedule = () => {
-
-    const [date, changeDate] = useState(new Date());
-
-    function changeValue(val) {
-       changeDate(val);
-    }
-
-  return (
-      <div>
-        <br />
-         <Calendar onChange = {changeValue} value = {date} />
-         <p>The selected date is - {date.toLocaleDateString()}</p>
+   return (
+      <div className="schedule">
+         <div id="calendar">
+            <Calendar onChange={changeValue} value={date} />
+         </div>
+         <div id="event-box">
+            <p id="event-date">{date.toLocaleDateString()}</p>
+         </div>
       </div>
    );
 };

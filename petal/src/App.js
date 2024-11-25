@@ -9,7 +9,6 @@ import "./index.css";
 import Home from "./pages";
 import Pets from "./pages/pets";
 import Schedule from "./pages/schedule";
-import Reminders from "./pages/reminders";
 import Tips from "./pages/tips";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route path="/pets" element={<Pets />} />
                 <Route path="/schedule" element={<Schedule />} />
-                <Route path="/reminders" element={<Reminders/>} />
                 <Route path="/tips" element={<Tips />} />
             </Routes>
         </Router>
