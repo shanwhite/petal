@@ -45,7 +45,7 @@
   top: 0;
   left: -100%;
   transition: 850ms;
-  z-index: 0; /* NEED TO FIX: WHY IS THE CALENDAR APPEARING IN FRONT OF THE NAVBAR */
+  z-index: 12; /*values from 11-20 in z-index are for navigation elements*/
 }
 
 .nav-menu.active {
