@@ -112,6 +112,14 @@ span {
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
 }
 
+#calendar {
+  margin-right: 40px;
+}
+
+#event-box {
+  margin-left: 40px;
+}
+
 /* arrows, month-year & tiles */
 .react-calendar button {
   border: 0;
@@ -125,10 +133,10 @@ span {
 
 /* top part of calendar (arrows + month/year) */
 .react-calendar__navigation {
-  display: flex;
+  display: inline-flex; /* originally flex */
   height: auto;
   margin-top: 1.2em;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.2em;
   margin-left: 0.3em;
   margin-right: 0.3em;
 }
@@ -138,6 +146,9 @@ span {
   min-width: 44px;
   font-size: 1.3em;
   background: transparent;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 /* date tiles */
