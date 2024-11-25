@@ -8,9 +8,7 @@ import "../index.css";
 import { IconContext } from "react-icons";
 
 function Navbar() {
-
     const [sidebar, setSidebar] = useState([]);
-
     function showSidebar() {    // refer to lab 4 (toggleDisplay function)
         setSidebar(!sidebar);   // onClick -> sets sidebar as opposite value (true/false)
     };

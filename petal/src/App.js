@@ -16,7 +16,7 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home />} /> {/* index.js */}
+                <Route exact path="/" element={<Home />} />
                 <Route path="/pets" element={<Pets />} />
                 <Route path="/schedule" element={<Schedule />} />
                 <Route path="/tips" element={<Tips />} />
