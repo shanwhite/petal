@@ -1,8 +1,8 @@
 import React from "react";
 
-const Home = () => {
+function Home() {
     return (
-        <div>
+        <div className="home">
             <h1>Welcome to Petal!</h1>
         </div>
     );

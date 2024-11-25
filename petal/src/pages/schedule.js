@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
-
-const Schedule = () => {
+function Schedule() {
 
     const [date, changeDate] = useState(new Date());
 
@@ -12,7 +11,7 @@ const Schedule = () => {
     }
 
   return (
-      <div>
+      <div className="schedule">
         <br />
          <Calendar onChange = {changeValue} value = {date} />
          <p>The selected date is - {date.toLocaleDateString()}</p>

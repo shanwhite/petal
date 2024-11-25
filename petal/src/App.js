@@ -9,7 +9,6 @@ import "./index.css";
 import Home from "./pages";
 import Pets from "./pages/pets";
 import Schedule from "./pages/schedule";
-import Reminders from "./pages/reminders";
 import Tips from "./pages/tips";
 
 function App() {
@@ -17,10 +16,9 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route exact path="/" element={<Home />} /> {/* index.js */}
                 <Route path="/pets" element={<Pets />} />
                 <Route path="/schedule" element={<Schedule />} />
-                <Route path="/reminders" element={<Reminders/>} />
                 <Route path="/tips" element={<Tips />} />
             </Routes>
         </Router>
