@@ -36,13 +36,16 @@ function Navbar() {
                         </li>
                         {NavbarData.map((item, index) => {
                             return (
-                                // list of pages (home, pets, schedule, tips)
-                                <li key={index} className={item.name}>
-                                    <Link to={item.path}>
-                                    {item.icon}
-                                    <span>{item.title}</span>
-                                    </Link>
-                                </li>
+                                <div className="tabs">
+                                    {/* list of pages (home, pets, schedule, tips) */}
+                                    <li key={index} className={item.name}>
+                                        <Link to={item.path}>
+                                        {item.icon}
+                                        <span>{item.title}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                
                             )
                         })}
                     </ul>
