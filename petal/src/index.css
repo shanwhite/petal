@@ -20,8 +20,10 @@ body
 
 /* General CSS for all the pages*/
 .home, .pets, .schedule, .tips {
+  position: relative;
   display: flex;
-  height: 90vh;
+  top: 10px;
+  height: 89vh;
   width: 97vw;
   margin: 0 auto;
   text-align: center; /* might have to edit this after we code the other pages */
@@ -31,8 +33,26 @@ body
   background-color: #fbf4ea; 
   color: #151414;
   border-radius: 0 0 15px 15px;
+  overflow-y: auto;  /*to make the container scrollable*/
+  overflow-x: hidden; 
   /* border: 3px solid red; */
 }
+
+/* Removing an color or decoration on the scrollbar*/
+.home::-webkit-scrollbar, .pets::-webkit-scrollbar, .schedule::-webkit-scrollbar, .tips::-webkit-scrollbar {
+  width: 8px;
+}
+
+.home::-webkit-scrollbar-thumb, .pets::-webkit-scrollbar-thumb, .schedule::-webkit-scrollbar-thumb, .tips::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none; 
+}
+
+.home::-webkit-scrollbar-track, .pets::-webkit-scrollbar-track, .schedule::-webkit-scrollbar-track, .tips::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
 
 
 .navbar {   /*horizontal line at top of screen */
@@ -136,7 +156,7 @@ span {
   height: 86%;
   width: 40%;
   padding: 0.5em;
-  background-color: #fbf4ea;
+  background-color: #FAF9F6; /*off white color*/
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
   /* border: 2px solid red; */

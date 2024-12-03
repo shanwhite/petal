@@ -3,9 +3,11 @@ import '../design/pets.css';
 
 function Pets() {
     return (
-        //The parent elements
-        <div className="pets"> <h1>set up pet profiles here</h1>
-            <div className="test"> TESTING </div>
+        //The parent element
+        <div className="pets">
+            <div className="container">
+            <div className="profiles"> TESTING </div>
+            </div>
 
 
 
