@@ -13,13 +13,13 @@ export const NavbarData = [
         name: "nav-text",
     }, 
     {
-        title: "Pets",
+        title: "My Pets",
         path: "/pets",
         icon: <MdOutlinePets />,
         name: "nav-text",
     }, 
     {
-        title: "Schedule",
+        title: "My Schedule",
         path: "/schedule",
         icon: <IoCalendar />,
         name: "nav-text",

@@ -34,7 +34,7 @@ body
   color: #151414;
   border-radius: 0 0 15px 15px;
   overflow-y: auto;  /*to make the container scrollable*/
-  overflow-x: hidden; 
+  overflow-x: auto; 
   /* border: 3px solid red; */
 }
 
