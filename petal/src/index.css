@@ -16,6 +16,7 @@ body
   background: linear-gradient(#7ea9aa 40%, #D5EDEE 100%);
   height: 100vh;
   width: 100vw;
+
 }
 
 /* General CSS for all the pages*/
@@ -23,7 +24,7 @@ body
   position: relative;
   display: flex;
   top: 10px;
-  height: 89vh;
+  height: 90vh;
   width: 97vw;
   margin: 0 auto;
   text-align: center; /* might have to edit this after we code the other pages */
@@ -60,7 +61,7 @@ body
   top: 10px;
   background: #FFDFA0;
   height: 60px;
-  width: 97vw;
+  width: 97vw; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
