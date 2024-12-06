@@ -10,21 +10,53 @@ import Home from "./pages";
 import Pets from "./pages/pets";
 import Schedule from "./pages/schedule";
 import Tips from "./pages/tips";
-import Login from "./pages/login";
+import Login from "./Login/login";
 
 function App() {
     return (
         <Router>
-            <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/pets" element={<Pets />} />
-                <Route path="/schedule" element={<Schedule />} />
-                <Route path="/tips" element={<Tips />} />
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <Navbar />
+                            <Home />
+                        </>
+                    }
+                />
+                <Route
+                    path="/pets"
+                    element={
+                        <>
+                            <Navbar />
+                            <Pets />
+                        </>
+                    }
+                />
+                <Route
+                    path="/schedule"
+                    element={
+                        <>
+                            <Navbar />
+                            <Schedule />
+                        </>
+                    }
+                />
+                <Route
+                    path="/tips"
+                    element={
+                        <>
+                            <Navbar />
+                            <Tips />
+                        </>
+                    }
+                />
                 <Route path="/login" element={<Login />} />
             </Routes>
         </Router>
     );
 }
+
 
 export default App;
