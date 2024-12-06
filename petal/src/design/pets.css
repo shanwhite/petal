@@ -16,6 +16,20 @@
     overflow: auto;
 }
 
+/* Removing an color or decoration on the scrollbar*/
+.container::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+.container::-webkit-scrollbar{
+    background: transparent;
+    border: none; 
+  }
+  
+.container::-webkit-scrollbar{
+    background: transparent;
+  }
+
 /*the profiles themselves*/
 .test
 {
