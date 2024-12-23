@@ -3,12 +3,15 @@ import '../Login/login.css';
 
 function Login() {
     return (
+        <div className="OuterWrapper">
         <div className="Wrapper">
+            <div className="Rectangle"></div>
             <div className="Title">
-                <h1>Welcome!</h1>
+                <h1>Welcome!⋆˚✿˖° </h1><br />
                 <p>Create your account</p>
-            </div><br />
+            </div>
             <div className="FormContainer">
+            
                 <form class="InputBox" id="form">
                     <input 
                     type="text"
@@ -39,6 +42,7 @@ function Login() {
                 <br/>
                 <a href= "#" classname="accountExist">Already have an account?</a>
             </div>
+        </div>
         </div>
     );
 };
