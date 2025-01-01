@@ -8,7 +8,7 @@ import { RiLightbulbFill } from "react-icons/ri";
 export const NavbarData = [
     {
         title: "Home",
-        path: "/",
+        path: "/home",
         icon: <FaHome />,
         name: "nav-text",
     }, 
@@ -28,6 +28,11 @@ export const NavbarData = [
         title: "Tips",
         path: "/tips",
         icon: <RiLightbulbFill />,
+        name: "nav-text",
+    },
+    {
+        title: "Log out",
+        path: "/signup",
         name: "nav-text",
     } 
 ];
