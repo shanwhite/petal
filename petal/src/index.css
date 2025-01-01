@@ -21,22 +21,15 @@ body
 
 /* General CSS for all the pages*/
 .home, .pets, .schedule, .tips {
-  position: relative;
   display: flex;
-  top: 10px;
-  height: 90vh;
-  width: 97vw;
-  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
   text-align: center; /* might have to edit this after we code the other pages */
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  background-color: #fbf4ea; 
+  background-color: #fbf4ea;
   color: #151414;
-  border-radius: 0 0 15px 15px;
-  overflow-y: auto;  /*to make the container scrollable*/
-  overflow-x: auto; 
-  /* border: 3px solid red; */
 }
 
 /* Removing an color or decoration on the scrollbar*/
@@ -53,35 +46,26 @@ body
   background: transparent;
 }
 
-
-
-
 .navbar {   /*horizontal line at top of screen */
-  position: relative; 
-  top: 10px;
   background: #FFDFA0;
-  height: 60px;
-  width: 97vw; 
+  height: 200px;
+  width: 100vw; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 auto;
-  border-radius: 15px 15px 0 0;
-  /* border: 2px solid red; */
 }
 
 /* The hamburger icon */
 .menu-bars {
+  margin-top: 7rem;
   margin-left: 2rem;
-  margin-top: 0.6rem;
   font-size: 2rem;
   background: none;
   color: #000;
 }
 
 .nav-menu {
-  background: linear-gradient(#7ea9aa 40%, #D5EDEE 100%);
-  opacity: 0.95;
+  background: #7ea9aa;
   width: 300px;
   height: 100vh;
   display: flex;
@@ -132,7 +116,7 @@ body
 .navbar-toggle {
   background-color: #7ea9aa;
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -143,7 +127,7 @@ span {
 }
 
 .tabs {
-  margin-top: 2em;
+  margin-top: 3rem;
 }
 
 /* SCHEDULE PAGE */
