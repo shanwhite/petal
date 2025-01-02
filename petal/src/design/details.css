@@ -61,6 +61,7 @@
   font-size: 20px; 
 }
 
+/* Design for the table rows */
 .detail-rows {
   display: block;
   margin-bottom: 50px; /*adding space between every row*/
@@ -95,7 +96,7 @@
 .petdetails div {
   background: none;
 }
-  
+
 .search-message
 {
   position: relative;
@@ -103,7 +104,6 @@
   width: 1300px;
   height: 30px;
   font-size: 18px;
-  /* border: 2px solid red; */
 }
 
 /* position of message if count is 0 */

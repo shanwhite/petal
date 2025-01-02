@@ -18,7 +18,8 @@ import "../design/details.css";
  * If it is, convert pet.age to an integer and render the pet detail that satisfies the search item.
  * if not, modify search item for string pet details.
  */
-// SEARCH FUNCTION
+
+//SEARCH FUNCTION
 function Tips() {
     const [search, setSearch] = useState("");
     function searchPet(pet, search) {
@@ -54,8 +55,8 @@ function Tips() {
           </div>
         </div>
       {/*Reference: Used Copilot here to refine the conditional rendering 
-      Helped me find a way to render the pet list if the search item was empty 
-      Else if not, then render the pet details based on search and the messages
+      Helped me find a way to render petDate if nothing was searched
+      Else, render the pet details and messages based on search
       */}
       {/*CONDITIONAL RENDERING */}
       {search && (
@@ -65,7 +66,7 @@ function Tips() {
           {count > 1 && <p>{count} pet details found under "{search}"</p>}
         </div>
       )}
-      {/* Render pet list */}
+      {/*RENDER PET LIST*/}
       <div>
         {/* START OF TABLE */}
       <table style={{ borderCollapse: "collapse", width: "100%" }}>
@@ -76,7 +77,7 @@ function Tips() {
                 <td>
                     <img src={pet.image} alt={pet.name} className="images" />
                 </td>
-                {/* Pet name, gender, breed and age */}
+                {/* Pet name, gender, breed, age, and care date*/}
                 <td className="petdetails">
                   <div><span>Name:</span> {pet.name}</div>
                   <div><span>Gender:</span> {pet.gender}</div>
