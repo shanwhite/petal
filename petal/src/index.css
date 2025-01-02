@@ -11,7 +11,7 @@
 .home, .schedule, .tips {
   display: flex;
   height: 90vh;
-  text-align: center; /* might have to edit this after we code the other pages */
+  text-align: center;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
@@ -97,7 +97,7 @@ span {
 }
 
 .tabs {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 /* SCHEDULE PAGE */
@@ -111,17 +111,37 @@ span {
   height: 80%;
   width: 40%;
   padding: 0.5em;
+  flex-direction: column; /* stack elements vertically */
   background-color: #fbf4ea;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
 }
 
 #calendar {
-  margin-right: 40px;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: space-between; /* push button to bottom */
 }
 
 #event-box {
-  margin-left: 40px;
+  margin-left: 3vw;
+}
+
+#reset-btn {
+  align-self: center; /* center button horizontally */
+  height: 1.5em;
+  width: 8vw;
+  font-size: 0.85em;
+  background-color: #7ea9aa;
+  color: white;
+  border: 1px transparent solid;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #568687;
 }
 
 /* arrows, month-year & tiles */
@@ -137,12 +157,11 @@ span {
 
 /* top part of calendar (arrows + month/year) */
 .react-calendar__navigation {
-  display: inline-flex; /* originally flex */
+  display: flex;
   height: auto;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
+  margin-top: 0.55em;
+  margin-bottom: 0.55em;
+  justify-content: space-between;
 }
 
 /* arrows + month/year buttons at top of calendar */
@@ -200,4 +219,18 @@ span {
 #event-date {
   font-size: 1.5em;
   margin-top: 0.5em;
+}
+
+#schedule-details {
+  text-align: justify;
+}
+
+.details {
+  margin-left: 4.4%;
+  font-size: 18px;
+}
+
+#schedule-list {
+  margin-left: 10%;
+  font-size: 18px;
 }
