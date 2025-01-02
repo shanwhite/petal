@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-.home, .pets, .schedule, .tips {
+.home, .schedule, .tips {
   display: flex;
   height: 90vh;
   text-align: center; /* might have to edit this after we code the other pages */
