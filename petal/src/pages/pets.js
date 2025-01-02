@@ -7,7 +7,7 @@ import '../design/pets.css';
 const table = () => {
   return (
     // main container holding all contents
-    <div className="container">
+    <div className="pet-container">
         {/* START OF TABLE */}
       <table style={{ borderCollapse: "collapse", width: "100%" }}>
         <tbody>

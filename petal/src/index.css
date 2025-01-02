@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-.home, .schedule, .tips {
+.home, .schedule {
   display: flex;
   height: 90vh;
   text-align: center;
