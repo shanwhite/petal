@@ -18,6 +18,7 @@ import "../design/details.css";
  * If it is, convert pet.age to an integer and render the pet detail that satisfies the search item.
  * if not, modify search item for string pet details.
  */
+// SEARCH FUNCTION
 function Tips() {
     const [search, setSearch] = useState("");
     function searchPet(pet, search) {
@@ -30,8 +31,7 @@ function Tips() {
         return (
           pet.name.startsWith(modSearch) ||
           pet.gender.startsWith(modSearch) ||
-          pet.breed.startsWith(modSearch) ||
-          pet.description.startsWith(modSearch)
+          pet.breed.startsWith(modSearch)
         );
       }
     }
@@ -40,33 +40,34 @@ function Tips() {
     let count = filteredPets.length; // Number of pets matching the search
 
     return (
-            <div className="detail-container">
-            <input
-                className="searchbar"
+    <div className="detail-container">
+        <div className= "header-container">
+          {/* div containing header and input box */}
+        <div className="detail-header"><h1> Pet Details List 🐈‍⬛</h1></div>
+          <div>
+              <input
                 type="text"
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
                 placeholder="Search details of any pet..."
-            />
-      <div className="detail-header"><h1> Pet Details List 🐈‍⬛</h1></div>
+                />
+          </div>
+        </div>
       {/*Reference: Used Copilot here to refine the conditional rendering 
       Helped me find a way to render the pet list if the search item was empty 
       Else if not, then render the pet details based on search and the messages
       */}
-
       {/*CONDITIONAL RENDERING */}
       {search && (
-        <div>
-          {count === 0 && <p>No pet detail found under "{search}"</p>}
-          {count === 1 && <p>One pet detail found under "{search}"</p>}
-          {count > 1 && (
-            <p>
-              {count} pet details found under "{search}"
-            </p>
-          )}
+        <div className="search-message">
+          {count === 0 && <div className="empty"><p>No pet detail found under "{search}"</p></div>}
+          {count === 1 && <div className="one"><p>One pet detail found under "{search}"</p></div>}
+          {count > 1 && <p>{count} pet details found under "{search}"</p>}
         </div>
       )}
       {/* Render pet list */}
+      <div>
+        {/* START OF TABLE */}
       <table style={{ borderCollapse: "collapse", width: "100%" }}>
         <tbody>
           {(search ? filteredPets : petData).map((pet, index) => (
@@ -106,20 +107,20 @@ function Tips() {
                         </ul>
                     </div>
                 </td>
-                {/* *Pet care date with to-do list
-                    *Used nested mapping to access the to-do list*/}
-              <td>
-                <span style={{position: "relative", top: "-15px", left: "-15px"}}>To-do List ☑</span>
-                <ul>
-                  {pet.toDoList.map((list, i) => (
-                    <li key={i}>{list}</li>
-                  ))}
-                </ul>
-              </td>
+                {/*Used nested mapping to access the to-do list*/}
+                <td>
+                  <span style={{position: "relative", top: "-15px", left: "-15px"}}>To-do List ☑</span>
+                  <ul>
+                    {pet.toDoList.map((list, i) => (
+                      <li key={i}>{list}</li>
+                    ))}
+                  </ul>
+                </td>
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> {/*END OF TABLE */}
+      </div>
     </div>
   );
 }
