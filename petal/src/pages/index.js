@@ -37,8 +37,8 @@ function Home() {
                     <div className="rectangle">
                         <div className="innerRectangle">
                         <h1>What are we about?</h1>
-                        <p><u>Petal</u> is a Pet Care Assistant app which keeps track of all pet-related responsibilities, including feeding, grooming, vet appointments, and walks.<br /><br />
-                        Its key features include a schedule for feeding and exercises, reminders for medication, milestone tracking for vaccinations, and pet-related tips.</p><br/>
+                        <p><u>Petal</u> is a Pet Care Assistant app which keeps track of all pet-related responsibilities, including feeding, grooming, and walks.<br /><br />
+                        Its key features include a schedule with to-do lists for each pet, detailed pet profiles, and a powerful search feature to find specific pets by name, gender, breed, or age.</p><br/>
                         <div className="cat">⊹₊⋆ฅ^•ﻌ•^ฅ₊⋆⊹</div>
                         <p>Have fun exploring our application!</p>
                         </div>
@@ -51,7 +51,7 @@ function Home() {
                 <p>View details of your selected breeds</p>
                 </div>
                 <div className="square2"><h1>Schedule</h1>
-                <p>Keep organised by setting reminders and to-do lists for your pets</p>
+                <p>Keep organised by tracking to-do lists for your pets</p>
                 </div>
                 <div className="square2"><h1>Pet Details</h1><p>Use the search engine for specific information</p></div>
             </section>
