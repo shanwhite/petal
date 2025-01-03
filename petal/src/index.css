@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Affects everything */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,10 +9,21 @@
   font-weight: 400;
 }
 
-.home, .schedule {
+/* Affects on the consistent screen in the back */
+body
+{
+  background-color: #7ea9aa;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+/* General CSS for all the pages*/
+ .pets, .schedule, .tips {
   display: flex;
-  height: 90vh;
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center; /* might have to edit this after we code the other pages */
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
@@ -19,17 +31,193 @@
   color: #151414;
 }
 
-/* NAVBAR CSS */
+/* Removing an color or decoration on the scrollbar*/
+.home::-webkit-scrollbar, .pets::-webkit-scrollbar, .schedule::-webkit-scrollbar, .tips::-webkit-scrollbar {
+  width: 8px;
+}
+
+.home::-webkit-scrollbar-thumb, .pets::-webkit-scrollbar-thumb, .schedule::-webkit-scrollbar-thumb, .tips::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none; 
+}
+
+.home::-webkit-scrollbar-track, .pets::-webkit-scrollbar-track, .schedule::-webkit-scrollbar-track, .tips::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fbf4ea;
+}
+
+.banner{
+  background-color: hwb(20 69% 0%);
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-text-container{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .welcome{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+} 
+
+.logo{
+  width: 300px;
+  height: 300px;
+  background-color: #fff4de;
+  border-radius: 100%;
+  border-style: dashed;
+  border-color: #f57373;
+  border-width: 6px;
+  margin-top: 10px;
+} 
+
+.logoContainer{
+  width: 500px;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoContainer h1{
+  width: 500px; 
+  text-align: center;
+  font-size: 40px;
+  color: #cb5f5f; 
+}
+
+
+.rectangle{
+  width: 800px;
+  height: 100%;
+  background-color: #FFDFA0;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.innerRectangle{
+  width: 100%;
+  height: 100%;
+  background-color: #fff4de;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border: 10px solid #FFDFA0;
+  padding:15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.innerRectangle p{
+  margin-top:10px;
+
+}
+
+.innerRectangle h1{
+  color: #f57373;
+}
+
+.cat{
+  font-size: 40px;
+  color: #f57373;
+}
+
+
+.banner2{
+  background-color: #FFDFA0;
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 2rem;
+  padding: 30px;
+}
+
+.square2{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  background-color: #8ec4c5e0;
+  border-radius: 40px;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+
+}
+
+.innerRectangle1 p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding:10px;
+  font-weight: 350;
+  
+}
+
+.square{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  background-color:#f57373;
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.square h1{
+  color: rgba(255, 255, 255, 0.854);
+}
+
 .navbar {   /*horizontal line at top of screen */
-  background-color: #ffdfa0;
-  height: 80px;
+  background: #FFDFA0;
+  height: 150px;
+  width: 100vw; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-/* hamburger icon */
+/* The hamburger icon */
 .menu-bars {
+  margin-top: 5.5rem;
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
@@ -37,7 +225,7 @@
 }
 
 .nav-menu {
-  background-color: #7ea9aa;
+  background: #7ea9aa;
   width: 300px;
   height: 100vh;
   display: flex;
@@ -84,10 +272,11 @@
   width: 100%;
 }
 
+/* The top of the nav bar, where you toggle */
 .navbar-toggle {
   background-color: #7ea9aa;
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -98,7 +287,7 @@ span {
 }
 
 .tabs {
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 /* SCHEDULE PAGE */
@@ -109,40 +298,21 @@ span {
 /* CALENDAR CSS */
 #calendar, #event-box {
   position: relative;
-  height: 80%;
+  height: 86%;
   width: 40%;
   padding: 0.5em;
-  flex-direction: column; /* stack elements vertically */
-  background-color: #fbf4ea;
+  background-color: #FAF9F6; /*off white color*/
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
+  /* border: 2px solid red; */
 }
 
 #calendar {
-  margin-right: 3vw;
-  display: flex;
-  justify-content: space-between; /* push button to bottom */
+  margin-right: 40px;
 }
 
 #event-box {
-  margin-left: 3vw;
-}
-
-#reset-btn {
-  align-self: center; /* center button horizontally */
-  height: 1.5em;
-  width: 8vw;
-  font-size: 0.85em;
-  background-color: #7ea9aa;
-  color: white;
-  border: 1px transparent solid;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
-  cursor: pointer;
-}
-
-#reset-btn:hover {
-  background-color: #568687;
+  margin-left: 40px;
 }
 
 /* arrows, month-year & tiles */
@@ -158,12 +328,12 @@ span {
 
 /* top part of calendar (arrows + month/year) */
 .react-calendar__navigation {
-  display: flex;
+  display: inline-flex; /* originally flex */
   height: auto;
-  margin-top: 0.55em;
-  margin-bottom: 0.55em;
-  justify-content: space-between;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
 }
+
 
 /* arrows + month/year buttons at top of calendar */
 .react-calendar__navigation button {
@@ -220,18 +390,4 @@ span {
 #event-date {
   font-size: 1.5em;
   margin-top: 0.5em;
-}
-
-#schedule-details {
-  text-align: justify;
-}
-
-.details {
-  margin-left: 4.4%;
-  font-size: 18px;
-}
-
-#schedule-list {
-  margin-left: 9%;
-  font-size: 18px;
 }
