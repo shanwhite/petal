@@ -45,7 +45,6 @@ function Navbar() {
                                         </Link>
                                     </li>
                                 </div>
-                                
                             )
                         })}
                     </ul>
