@@ -6,7 +6,7 @@
   background-color: #fbf4ea;
   padding: 50px 0px; /*height width*/
   overflow: auto;
-  font-size: 14px;
+  font-size: 16px;
   gap: 1em;
   /* flex box */
   display: grid; 
@@ -15,7 +15,7 @@
 
 .detail-container span {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Removing an color or decoration on the scrollbar*/
@@ -37,11 +37,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center; /* Ensures vertical alignment */
-  width: 1310px;
+  width: 1350px;
   height: 70px;
 }
 
 .detail-container input {
+  position: relative;
+  top: 15px;
   border-right: none;
   border-left: none;
   border-top: none;
@@ -74,10 +76,11 @@
   align-items: center;
   flex-direction: row;
   padding: 20px 20px; /*height, width*/
-  width: 1300px;
+  width: 1350px;
   height: 300px;
   gap: 1em;
   box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.181);
+  /* border: 2px solid red; */
 }
 
 .detail-container ul
@@ -91,7 +94,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.5em;
-  width: 250px;
+  width: 320px;
+  /* border: 2px solid green; */
 }
 
 .petdetails div {
