@@ -42,7 +42,6 @@ function Schedule() {
                   ))}
                </tbody>
             </table>
-            
          </div>
       </div>
    );
