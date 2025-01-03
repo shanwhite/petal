@@ -10,10 +10,10 @@ npm start
 ```
 
 ## Authors
-Khate Castelo<br />
-Shannen White<br />
 Ashley Macaspac<br />
-Sam McGrath
+Khate Castelo<br />
+Sam McGrath<br />
+Shannen White
 
 ## Functionalities List
 using an API<br />
