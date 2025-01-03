@@ -1,13 +1,14 @@
-//This code is responsible for connecting the firebase to the react project.
+// FUNCTIONALITY: Using a database such as Firebase
+// This code is responsible for connecting the firebase to the react project.
 
-// Import the functions you need from the SDKs you need
+// Import the functions needed from the SDKs needed
 import { initializeApp } from "firebase/app";
-import {getAuth} from "firebase/auth";//Help register user to firebase console
+import {getAuth} from "firebase/auth";  // Help register user to firebase console
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Petal's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCSqkQ9zl3esFDVed8lIGAj1L5hWjgqqDY",
   authDomain: "petal-cs385.firebaseapp.com",
@@ -17,7 +18,6 @@ const firebaseConfig = {
   messagingSenderId: "841063821284",
   appId: "1:841063821284:web:c221f202bdd3bad6f1e1f1"
 };
-
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

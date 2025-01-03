@@ -1,3 +1,4 @@
+// FUNCTIONALITY: A source of external JSON (created by ourselves)
 export const petData = [
   {
     name: "Bella",

@@ -1,9 +1,8 @@
 import React from "react";
-import { petData } from "../data/pets.js"; 
+import { petData } from "../data/petdata.js"; 
 import '../design/pets.css'; 
 
-
-//start of structuring the pet table
+// start of structuring the pet table
 const table = () => {
   return (
     // main container holding all contents
@@ -11,35 +10,35 @@ const table = () => {
         {/* START OF TABLE */}
       <table>
         <tbody>
-            {/* Used map function to render all pet data from JSON file */}
+            {/* used map function to render all pet data from JSON file */}
             {petData.map((pet, index) => (
                 <tr key={index} className="rows">
                     {/* pet image */}
                     <td>
                         <img src={pet.image} alt={pet.name} className="images" />
                     </td>
-                    {/* Pet name, gender, breed and age */}
+                    {/* pet name, gender, breed and age */}
                     <td className="details">
                         <div><span>Name:</span> {pet.name}</div>
                         <div><span>Gender:</span> {pet.gender}</div>
                         <div><span>Breed:</span> {pet.breed}</div>
                         <div><span>Age:</span> {pet.age}</div>
                     </td>
-                    {/* *Pet description with interests
-                        * Used nested mapping to access loves and hates from petDate */}
+                    {/* pet description with interests
+                        used nested mapping to access loves and hates from petData */}
                     <td>
                         <span style={{position: "relative", top: "-15px", left: "-15px"}}>Description 🐾</span>
                         <br />
                         {pet.description}
                         <div className="interest">
-                            {/* Pet likes */}
+                            {/* pet likes */}
                             <ul>
                                 <span> ✔ </span>
                                 {pet.loves.map((love, i) => (
                                   <li key={i}>{love}</li>
                                 ))}
                             </ul>
-                            {/* Pet dislikes */}
+                            {/* pet dislikes */}
                             <ul>
                               <span> ✖ </span>
                               {pet.hates.map((hate, i) => (
@@ -50,7 +49,7 @@ const table = () => {
                     </td>
                 </tr> ))}
             </tbody>
-        </table> {/*END OF TABLE*/}
+        </table> {/* END OF TABLE */}
     </div>
   );
 };

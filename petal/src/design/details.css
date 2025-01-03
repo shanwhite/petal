@@ -1,10 +1,10 @@
-/*main container surrounding the profiles*/
+/* main container surrounding the profiles */
 .detail-container
 {
   width: 100vw;
   height: 90vh;
   background-color: #fbf4ea;
-  padding: 50px 0px; /*height width*/
+  padding: 50px 0px; /* height width */
   overflow: auto;
   font-size: 16px;
   gap: 1em;
@@ -18,17 +18,17 @@
   font-size: 18px;
 }
 
-/* Removing an color or decoration on the scrollbar*/
-.detail-container::-webkit-scrollbar{
+/* removing a color or decoration on the scrollbar */
+.detail-container::-webkit-scrollbar {
     width: 8px;
   }
   
-.detail-container::-webkit-scrollbar{
+.detail-container::-webkit-scrollbar {
     background: transparent;
     border: none; 
   }
   
-.detail-container::-webkit-scrollbar{
+.detail-container::-webkit-scrollbar {
     background: transparent;
 } 
 
@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
+  align-items: center; /* ensures vertical alignment */
   width: 1350px;
   height: 70px;
 }
@@ -55,55 +55,51 @@
   border-radius: 5px;
   padding: 0px 20px;
   width: 400px;
-  box-sizing: border-box; /* Ensures consistent sizing with padding */
+  box-sizing: border-box; /* ensures consistent sizing with padding */
 }
 
-/* List header */
+/* list header */
 .detail-header {
   margin: 0;
   font-size: 20px; 
 }
 
-/* Design for the table rows */
+/* design for the table rows */
 .detail-rows {
   display: block;
-  margin-bottom: 50px; /*adding space between every row*/
+  margin-bottom: 50px; /* adding space between every row */
   border-radius: 10px;
   background-color: #FAF9F6;
-  /*creating a flex box */
+  /* creating a flex box */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 20px 20px; /*height, width*/
+  padding: 20px 20px; /* height, width */
   width: 1350px;
   height: 300px;
   gap: 1em;
   box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.181);
-  /* border: 2px solid red; */
 }
 
-.detail-container ul
-{
+.detail-container ul {
   list-style-type: none;
 }
 
-/* containing name, gender, age, and breed  */
+/* containing name, gender, age, and breed */
 .petdetails {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5em;
   width: 320px;
-  /* border: 2px solid green; */
 }
 
 .petdetails div {
   background: none;
 }
 
-.search-message
-{
+.search-message {
   position: relative;
   top: 0px;
   width: 1300px;
@@ -112,15 +108,13 @@
 }
 
 /* position of message if count is 0 */
-.empty
-{
+.empty {
   position: relative; 
   top: -148px;
 }
 
-/* position of message if count is 1*/
-.one
-{
+/* position of message if count is 1 */
+.one {
   position: relative; 
   top: -48px;
   margin-top: 1em;

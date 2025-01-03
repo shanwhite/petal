@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
-import { petData } from "../data/pets.js"; 
+import { petData } from "../data/petdata.js"; 
 import "../index.css";
 
 function Schedule() {

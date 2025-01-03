@@ -1,4 +1,6 @@
-// followed tutorial from https://youtu.be/zQBd3hNXJgI?si=mgyO1W3JxMBuH2Sc
+// Referenced a Tutorial for a 'React Sidebar Navigation Menu using React Router' by Brian Design
+// Source: https://youtu.be/zQBd3hNXJgI?si=mgyO1W3JxMBuH2Sc
+// Tweaked the code to suit Petal's functionalities
 import React from "react";
 import { FaHome } from "react-icons/fa";
 import { MdOutlinePets } from "react-icons/md";

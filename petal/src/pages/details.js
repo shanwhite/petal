@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { petData } from "../data/pets.js";
+import { petData } from "../data/petdata.js";
 import "../design/pets.css";
 import "../design/details.css"; 
 
@@ -19,16 +19,16 @@ import "../design/details.css";
  * if not, modify search item for string pet details.
  */
 
-//SEARCH FUNCTION
-function Tips() {
+// SEARCH FUNCTION
+function Details() {
     const [search, setSearch] = useState("");
     function searchPet(pet, search) {
       if (/^\d+$/.test(search)) {
-        //if statement to check for digits
+        // if statement to check for digits
         return pet.age === parseInt(search, 10);
       } else {
         const modSearch =
-          search.charAt(0).toUpperCase() + search.slice(1).toLowerCase().trim(); //modified search item and excluded leading whitespaces
+          search.charAt(0).toUpperCase() + search.slice(1).toLowerCase().trim(); // modified search item and excluded leading whitespaces
         return (
           pet.name.startsWith(modSearch) ||
           pet.gender.startsWith(modSearch) ||
@@ -37,8 +37,8 @@ function Tips() {
       }
     }
 
-    let filteredPets = petData.filter((pet) => searchPet(pet, search)); // Filter pets based on search
-    let count = filteredPets.length; // Number of pets matching the search
+    let filteredPets = petData.filter((pet) => searchPet(pet, search)); // filter pets based on search
+    let count = filteredPets.length; // number of pets matching the search
 
     return (
     <div className="detail-container">
@@ -51,14 +51,13 @@ function Tips() {
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
                 placeholder="Search details of any pet..."
-                />
+              />
           </div>
         </div>
       {/*Reference: Used Copilot here to refine the conditional rendering 
       Helped me find a way to render petDate if nothing was searched
-      Else, render the pet details and messages based on search
-      */}
-      {/*CONDITIONAL RENDERING */}
+      Else, render the pet details and messages based on search */}
+      {/* FUNCTIONALITY: Conditional Rendering */}
       {search && (
         <div className="search-message">
           {count === 0 && <div className="empty"><p>No pet detail found under "{search}"</p></div>}
@@ -66,7 +65,7 @@ function Tips() {
           {count > 1 && <p>{count} pet details found under "{search}"</p>}
         </div>
       )}
-      {/*RENDER PET LIST*/}
+      {/* RENDER PET LIST */}
       <div>
         {/* START OF TABLE */}
       <table>
@@ -77,7 +76,7 @@ function Tips() {
                 <td>
                     <img src={pet.image} alt={pet.name} className="images" />
                 </td>
-                {/* Pet name, gender, breed, age, and care date*/}
+                {/* pet name, gender, breed, age, and care date */}
                 <td className="petdetails">
                   <div><span>Name:</span> {pet.name}</div>
                   <div><span>Gender:</span> {pet.gender}</div>
@@ -85,21 +84,21 @@ function Tips() {
                   <div><span>Age:</span> {pet.age}</div>
                   <div><span>Care date: </span> {pet.careDate}</div>
                 </td>
-                {/* *Pet description with interests
-                    * Used nested mapping to access loves and hates from petDate */}
+                {/* pet description with interests
+                    used nested mapping to access loves and hates from petData */}
                 <td>
                     <span style={{position: "relative", top: "-15px", left: "-15px"}}>Description 🐾</span>
                     <br />
                     {pet.description}
                     <div className="interest">
-                        {/* Pet likes */}
+                        {/* pet likes */}
                         <ul>
                             <span> ✔ </span>
                             {pet.loves.map((love, i) => (
                               <li key={i}>{love}</li>
                             ))}
                         </ul>
-                        {/* Pet dislikes */}
+                        {/* pet dislikes */}
                         <ul>
                           <span> ✖ </span>
                           {pet.hates.map((hate, i) => (
@@ -108,7 +107,7 @@ function Tips() {
                         </ul>
                     </div>
                 </td>
-                {/*Used nested mapping to access the to-do list*/}
+                {/* used nested mapping to access the to-do list */}
                 <td>
                   <span style={{position: "relative", top: "-15px", left: "-15px"}}>To-Do List ☑</span>
                   <ul>
@@ -120,10 +119,10 @@ function Tips() {
             </tr>
           ))}
         </tbody>
-      </table> {/*END OF TABLE */}
+      </table> {/* END OF TABLE */}
       </div>
     </div>
   );
-}
+};
 
-export default Tips;
+export default Details;

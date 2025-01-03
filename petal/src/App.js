@@ -18,6 +18,7 @@ function App() {
     return (
         <Router>
             <Routes>
+                {/* FUNCTIONALITY: Using React Router */}
                 <Route path="/" element={<Navigate to={'/signup'}/>}/>
                 <Route path="/signup" element={<SignUp/>}/>
                 <Route path="/login" element={<Login/>}/>

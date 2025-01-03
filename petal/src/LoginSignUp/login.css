@@ -7,22 +7,20 @@
     height: 100vh;
 }
 
-.Title{
+.Title {
     width: 100%;
     text-align : center;
-
 }
 
-h1{
+h1 {
     font-size: 10px;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
-.Rectangle{
-
+.Rectangle {
     background-color: #FFDFA0;
     width: 100%;
     height: 10%;
@@ -30,22 +28,20 @@ p{
     top: 0;
     border-radius: 5px;
     border: 1px solid #FBF4EA;
-
-
 }
 
 .OuterWrapper {
-
     background-color: rgb(250, 250, 250);
     width: 560px;
     height: 610px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     border-radius: 5px;
     border: 2px solid white;
 }
+
 .Wrapper {
-    bottom:10px;
+    bottom: 10px;
     right: 10px;
     background-color: #FBF4EA;
     width: 560px;
@@ -60,8 +56,7 @@ p{
 }
 
 .FormContainer1 {
-
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
@@ -69,23 +64,18 @@ p{
     justify-content: space-between;
     gap: 70px;
     text-align: center;
-
 }
 
 .InputBox2 {
-
     margin-top: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width:100%; 
+    width: 100%; 
     height: 100%;
     margin-bottom: 70px;
-    
 }
 
-
-input
-{ 
+input { 
     border-right: none; 
     border-left: none; 
     border-top: none; 
@@ -95,8 +85,7 @@ input
     margin-bottom: 30px;
     background-color: #fce5b6;
     border-radius: 5px;
-    text-align: center ;
-
+    text-align: center;
 }
 
 .buttonContainer2 {
@@ -105,7 +94,7 @@ input
     display: flex;
 }
 
-#login{
+#login {
     width: 45%;
     padding: 2%;
     background-color: #FFDFA0;
@@ -119,26 +108,23 @@ a {
     color: #D46868;
 }
 
-.Username{
-    
+.Username {
     font-size: 18px;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.Email{
+.Email {
     font-size: 18px;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
-    
 }
 
-.Password{
+.Password {
     font-size: 18px;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
-    
 }
