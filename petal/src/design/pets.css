@@ -76,7 +76,7 @@
   border-radius: 8px;
 }
 
-span {
+.pet-container span {
   font-weight: bold;
   font-size: 18px;
 }
