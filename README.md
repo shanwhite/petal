@@ -21,9 +21,9 @@ using an API<br />
 ✓ source of external JSON<br />
 ✓ conditional rendering<br />
 ✓ project specific sorting, filtering, searching<br />
-using a selection of user interface (UI) elements<br />
+✓ using a selection of user interface (UI) elements<br />
 parent-child communication<br />
-using multiple components<br />
+✓ using multiple components<br />
 ✓ using react router<br />
 developing your own computation or algorithms<br />
 sensible mixture of functional and class-based components
