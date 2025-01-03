@@ -23,7 +23,7 @@ function Schedule() {
                <tbody>
                   {petData
                   // when the user clicks on a specific date of the calendar,
-                  // if the selected date matches the careDate from the JSON file (../data/pets.js),
+                  // if the selected date matches the careDate from the JSON file (../data/petdata.js),
                   // display the name, breed, and to-do list in the event box
                   .filter((pet) => pet.careDate === date.toLocaleDateString())
                   // render the name, breed and toDoList properties from pets.js
@@ -36,7 +36,7 @@ function Schedule() {
                            <br />
                            <div><span style={{fontWeight:"bold"}}>To-Do List: </span>
                               {pet.toDoList
-                              // render all properties of toDoList from pets.js as a list
+                              // render all properties of toDoList from petdata.js as a list
                               .map((toDo, i) => (
                                 <li key={i} id="schedule-list">{toDo}</li>
                               ))}

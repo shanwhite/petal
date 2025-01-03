@@ -1,6 +1,5 @@
 /* main container surrounding the profiles */
-.detail-container
-{
+.detail-container {
   width: 100vw;
   height: 90vh;
   background-color: #fbf4ea;
@@ -26,7 +25,7 @@
 .detail-container::-webkit-scrollbar {
     background: transparent;
     border: none; 
-  }
+}
   
 .detail-container::-webkit-scrollbar {
     background: transparent;

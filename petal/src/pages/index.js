@@ -1,29 +1,27 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Logo from '../images/logo1.png';
 import Search from '../images/icons8-search-96.png';
 import {auth, db} from "../components/firebase";
 import {doc, getDoc} from "firebase/firestore";
-import { useEffect, useState} from "react";
 
 function Home() {
     const [userDetails, setUserDetails] = useState(null);
 
-    const fetchUserData= async () => {
+    const fetchUserData = async () => {
         auth.onAuthStateChanged(async (user) => {
             console.log(user);
-            const docRef=doc(db, "Users", user.uid);
-            const docSnap=await getDoc(docRef);
-            //If there exists data, retrieve the data
-            if(docSnap.exists()){
+            const docRef = doc(db, "Users", user.uid);
+            const docSnap = await getDoc(docRef);
+            // retrieve data if it exists
+            if(docSnap.exists()) {
                 setUserDetails(docSnap.data());
                 console.log(docSnap.data())
-            }
-            else{
+            } else {
                 console.log("User is not logged in"); 
             }
         })};
 
-    useEffect(()=>{
+    useEffect(() => {
         fetchUserData();
     },[]);
 
@@ -32,6 +30,7 @@ function Home() {
                 <section className="banner">
                     <div className="logo-text-container">
                         <div className="logoContainer">
+                            {/* FUNCTIONALITY: Conditional Rendering */}
                             {userDetails ? (<div className="welcome"><h1>𑁍ࠬܓWelcome {userDetails.username}</h1></div> ):(<p>Loading...</p>)}
                             <img src={Logo} alt="logo" className="logo"/>
                         </div>
