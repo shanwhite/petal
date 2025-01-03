@@ -1,9 +1,10 @@
-body {
+.body {
     position: relative; 
     display: flex;
     justify-content: center;
     align-items: center; 
     background-color: #7ea9aa;
+    height: 100vh;
 }
 
 .Title{

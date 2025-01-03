@@ -61,44 +61,46 @@ const validateForm = () => {
 }
 
     return (
-        <div className="OuterWrapper">
-        <div className="Wrapper">
-            <div className="Rectangle"></div>
-            <div className="Title2">
-                <h1>°˖✿˚⋆Welcome to Petal!⋆˚✿˖°</h1><br />
-                <p>Create your account</p>
+        <div className="body">
+            <div className="OuterWrapper">
+            <div className="Wrapper">
+                <div className="Rectangle"></div>
+                <div className="Title2">
+                    <h1>°˖✿˚⋆Welcome to Petal!⋆˚✿˖°</h1><br />
+                    <p>Create your account</p>
+                </div>
+                <div className="FormContainer">
+                    <form onSubmit={handleRegister} className="InputBox" id="form">
+                        <label className="Username">Username</label>
+                        <input 
+                        type="text"
+                        id="username"
+                        onChange={(e) => setUsername(e.target.value)}
+                        required
+                        />
+                        <label className="Email">Email</label>
+                        <input 
+                        type="email"
+                        id="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        />
+                        <label className="Password">Password</label>
+                        <input 
+                        type="password"
+                        id="password"
+                        onChange={(e) => setPassword(e.target.value)}
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                        required
+                        />
+                        <div className="buttonContainer"><button id="create" type="submit">Create Account</button></div>
+                    </form>
+                </div>
+                <br/>
+                <Link to= "/login" className="accountExist">Already have an account?</Link>
             </div>
-            <div className="FormContainer">
-                <form onSubmit={handleRegister} className="InputBox" id="form">
-                    <label className="Username">Username</label>
-                    <input 
-                    type="text"
-                    id="username"
-                    onChange={(e) => setUsername(e.target.value)}
-                    required
-                    />
-                    <label className="Email">Email</label>
-                    <input 
-                    type="email"
-                    id="email"
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    />
-                    <label className="Password">Password</label>
-                    <input 
-                    type="password"
-                    id="password"
-                    onChange={(e) => setPassword(e.target.value)}
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
-                    required
-                    />
-                    <div className="buttonContainer"><button id="create" type="submit">Create Account</button></div>
-                </form>
             </div>
-            <br/>
-            <Link to= "/login" className="accountExist">Already have an account?</Link>
-        </div>
         </div>
     );
 };
