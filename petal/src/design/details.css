@@ -1,7 +1,7 @@
 /*main container surrounding the profiles*/
 .detail-container
 {
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   background-color: #fbf4ea;
   padding: 50px 0px; /*height width*/
