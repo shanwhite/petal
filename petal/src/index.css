@@ -9,28 +9,6 @@
   font-weight: 400;
 }
 
-/* Affects on the consistent screen in the back */
-body
-{
-  background-color: #7ea9aa;
-  height: 100vh;
-  width: 100vw;
-
-}
-
-/* General CSS for all the pages*/
- .pets, .schedule, .tips {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  text-align: center; /* might have to edit this after we code the other pages */
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  background-color: #fbf4ea;
-  color: #151414;
-}
-
 /* Removing an color or decoration on the scrollbar*/
 .home::-webkit-scrollbar, .pets::-webkit-scrollbar, .schedule::-webkit-scrollbar, .tips::-webkit-scrollbar {
   width: 8px;
@@ -106,7 +84,6 @@ body
   color: #cb5f5f; 
 }
 
-
 .rectangle{
   width: 800px;
   height: 100%;
@@ -115,7 +92,6 @@ body
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .innerRectangle{
@@ -206,18 +182,18 @@ body
   color: rgba(255, 255, 255, 0.854);
 }
 
+/* NAVBAR CSS */
 .navbar {   /*horizontal line at top of screen */
-  background: #FFDFA0;
-  height: 150px;
-  width: 100vw; 
+  background: #ffdfa0;
+  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-/* The hamburger icon */
+/* hamburger icon */
 .menu-bars {
-  margin-top: 5.5rem;
+  margin-top: 10px;
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
@@ -276,7 +252,7 @@ body
 .navbar-toggle {
   background-color: #7ea9aa;
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -287,11 +263,20 @@ span {
 }
 
 .tabs {
-  margin-top: 3rem;
+  margin-top: 3em;
 }
 
 /* SCHEDULE PAGE */
 .schedule {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  text-align: center; /* might have to edit this after we code the other pages */
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: #fbf4ea;
+  color: #151414;
   margin: auto;
 }
 
@@ -301,18 +286,36 @@ span {
   height: 86%;
   width: 40%;
   padding: 0.5em;
-  background-color: #FAF9F6; /*off white color*/
+  background-color: #faf9f6; /*off white color*/
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
-  /* border: 2px solid red; */
 }
 
 #calendar {
-  margin-right: 40px;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: space-between; /* push button to bottom */
 }
 
 #event-box {
-  margin-left: 40px;
+  margin-left: 3vw;
+}
+
+#reset-btn {
+  align-self: center; /* center button horizontally */
+  height: 1.5em;
+  width: 8vw;
+  font-size: 0.85em;
+  background-color: #7ea9aa;
+  color: white;
+  border: 1px transparent solid;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #568687;
 }
 
 /* arrows, month-year & tiles */
@@ -328,12 +331,12 @@ span {
 
 /* top part of calendar (arrows + month/year) */
 .react-calendar__navigation {
-  display: inline-flex; /* originally flex */
+  display: flex;
   height: auto;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  margin-top: 0.55em;
+  margin-bottom: 0.55em;
+  justify-content: space-between;
 }
-
 
 /* arrows + month/year buttons at top of calendar */
 .react-calendar__navigation button {
@@ -374,7 +377,7 @@ span {
 /* days of the week row */
 .react-calendar__month-view__weekdays__weekday {
   padding: 0.5em;
-  text-decoration: none;  /* NEED TO FIX THIS: to remove the default underline */
+  text-decoration: none;  /* to remove the default underline but doesn't work */
 }
 
 /* weekend dates */
@@ -390,4 +393,18 @@ span {
 #event-date {
   font-size: 1.5em;
   margin-top: 0.5em;
+}
+
+#schedule-details {
+  text-align: justify;
+}
+
+.details {
+  margin-left: 4.4%;
+  font-size: 18px;
+}
+
+#schedule-list {
+  margin-left: 9%;
+  font-size: 18px;
 }

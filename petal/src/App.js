@@ -10,7 +10,7 @@ import "./index.css";
 import Home from "./pages";
 import Pets from "./pages/pets";
 import Schedule from "./pages/schedule";
-import Tips from "./pages/tips";
+import Details from "./pages/details";
 import Login from "./LoginSignUp/login";
 import SignUp from "./LoginSignUp/signup";
 
@@ -24,7 +24,7 @@ function App() {
                 <Route path="/home" element={<><Navbar /><Home /></>}/>
                 <Route path="/pets" element={<><Navbar /><Pets /></>}/>
                 <Route path="/schedule" element={<><Navbar /><Schedule /></>}/>
-                <Route path="/tips" element={<><Navbar /><Tips /></>}/>
+                <Route path="/details" element={<><Navbar /><Details /></>}/>
             </Routes>
         </Router>
     );
