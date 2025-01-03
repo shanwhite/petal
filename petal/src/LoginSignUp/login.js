@@ -55,7 +55,7 @@ function Login() {
                 </form>
             </div>
             <br/>
-            <Link to = "/forgotpass" className="forgotPass">Forgot Password?</Link>
+            <Link to = "/signup" className="forgotPass">Create Account?</Link>
         </div>
         </div>
     );
