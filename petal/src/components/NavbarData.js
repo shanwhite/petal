@@ -19,7 +19,7 @@ export const NavbarData = [
         name: "nav-text",
     }, 
     {
-        title: "My Schedule",
+        title: "Schedule",
         path: "/schedule",
         icon: <IoCalendar />,
         name: "nav-text",
