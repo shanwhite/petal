@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Affects everything */
+/* affects everything */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +9,7 @@
   font-weight: 400;
 }
 
-/* Removing an color or decoration on the scrollbar*/
+/* removing a color or decoration on the scrollbar */
 .home::-webkit-scrollbar, .pets::-webkit-scrollbar, .schedule::-webkit-scrollbar, .tips::-webkit-scrollbar {
   width: 8px;
 }
@@ -32,7 +32,7 @@
   background-color: #fbf4ea;
 }
 
-.banner{
+.banner {
   background-color: hwb(20 69% 0%);
   width: 100vw;
   height: 1000px;
@@ -42,7 +42,7 @@
   padding: 20px;
 }
 
-.logo-text-container{
+.logo-text-container {
   width:100%;
   height:100%;
   display: flex;
@@ -50,14 +50,14 @@
   align-items: center;
 }
 
- .welcome{
+ .welcome {
   display:flex;
   align-items: center;
   justify-content: center;
   font-size: 50px;
 } 
 
-.logo{
+.logo {
   width: 300px;
   height: 300px;
   background-color: #fff4de;
@@ -68,7 +68,7 @@
   margin-top: 10px;
 } 
 
-.logoContainer{
+.logoContainer {
   width: 500px;
   height: 100%;
   flex-direction: column;
@@ -77,14 +77,14 @@
   justify-content: center;
 }
 
-.logoContainer h1{
+.logoContainer h1 {
   width: 500px; 
   text-align: center;
   font-size: 40px;
   color: #cb5f5f; 
 }
 
-.rectangle{
+.rectangle {
   width: 800px;
   height: 100%;
   background-color: #FFDFA0;
@@ -94,7 +94,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.innerRectangle{
+.innerRectangle {
   width: 100%;
   height: 100%;
   background-color: #fff4de;
@@ -103,42 +103,39 @@
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
   border: 10px solid #FFDFA0;
-  padding:15px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
 
-.innerRectangle p{
-  margin-top:10px;
-
+.innerRectangle p {
+  margin-top: 10px;
 }
 
-.innerRectangle h1{
+.innerRectangle h1 {
   color: #f57373;
 }
 
-.cat{
+.cat {
   font-size: 40px;
   color: #f57373;
 }
 
-
-.banner2{
+.banner2 {
   background-color: #FFDFA0;
   width: 100vw;
   height: 1000px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   padding: 30px;
 }
 
-.square2{
+.square2 {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   width: 400px;
   height: 300px;
@@ -147,43 +144,42 @@
   position:relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
-
 }
 
-.innerRectangle1 p{
+.innerRectangle1 p {
   margin-top: 10px;
   font-size: 20px;
   color: black;
   text-align: center;
   padding:10px;
   font-weight: 350;
-  
 }
 
-.square{
+.square {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 400px;
   height: 300px;
-  background-color:#f57373;
+  background-color: #f57373;
   text-align: center;
   position: absolute;
   width: 400px;
   height: 300px;
   border-radius: 40px;
-  position:relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.square h1{
+.square h1 {
   color: rgba(255, 255, 255, 0.854);
 }
 
 /* NAVBAR CSS */
-.navbar {   /*horizontal line at top of screen */
+/* yellow horizontal line at top of screen */
+.navbar {   
   background: #ffdfa0;
   height: 80px;
   display: flex;
@@ -200,6 +196,7 @@
   color: #000;
 }
 
+/* css for the blue nav menu on the left */
 .nav-menu {
   background: #7ea9aa;
   width: 300px;
@@ -210,14 +207,16 @@
   top: 0;
   left: -100%;
   transition: 850ms;
-  z-index: 12; /*values from 11-20 in z-index are for navigation elements*/
+  z-index: 12; /* values from 11-20 in z-index are for navigation elements */
 }
 
+/* blue nav menu when toggled */
 .nav-menu.active {
   left: 0;
   transition: 450ms;
 }
 
+/* labels for each page tab (icon + text) */
 .nav-text {
   display: flex;
   justify-content: flex-start;
@@ -227,6 +226,7 @@
   height: 60px;
 }
 
+/* when the page tab is clicked on */
 .nav-text a {
   text-decoration: none;
   color: #151414;
@@ -239,6 +239,7 @@
   border-radius: 4px;
 }
 
+/* when hovering over the page tabs */
 .nav-text a:hover {
   background-color: #d46868;
   color: #fff;
@@ -248,7 +249,7 @@
   width: 100%;
 }
 
-/* The top of the nav bar, where you toggle */
+/* horizontal line; top of the nav bar (blue & yellow) where you toggle */
 .navbar-toggle {
   background-color: #7ea9aa;
   width: 100%;
@@ -258,6 +259,7 @@
   align-items: center;
 }
 
+/* for the labels of the page tabs (text only) */
 span {
   margin-left: 16px;
 }
@@ -269,9 +271,9 @@ span {
 /* SCHEDULE PAGE */
 .schedule {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
-  text-align: center; /* might have to edit this after we code the other pages */
+  text-align: center;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
@@ -287,21 +289,24 @@ span {
   width: 40%;
   padding: 0.5em;
   flex-direction: column;
-  background-color: #faf9f6; /*off white color*/
+  background-color: #faf9f6; /* off white color */
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
 }
 
+/* box on the left of schedule page */
 #calendar {
   margin-right: 3vw;
   display: flex;
-  justify-content: space-between; /* push button to bottom */
+  justify-content: space-between; /* push reset button to bottom */
 }
 
+/* box on the right of schedule page */
 #event-box {
   margin-left: 3vw;
 }
 
+/* reset button that brings user back to today's date */
 #reset-btn {
   align-self: center; /* center button horizontally */
   height: 1.5em;
@@ -313,8 +318,10 @@ span {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
   cursor: pointer;
+  margin-bottom: 1px;
 }
 
+/* when hovering above the reset button */
 #reset-btn:hover {
   background-color: #568687;
 }
@@ -391,21 +398,26 @@ span {
   color: #999da0;
 }
 
+/* date displayed at the top of the event box */
 #event-date {
   font-size: 1.5em;
   margin-top: 0.5em;
+  margin-bottom: 0.15em;
 }
 
+/* affects all table data for event box */
 #schedule-details {
   text-align: justify;
   font-size: 21px;
 }
 
+/* "name", "breed", "to-do list" labels */
 .details {
   margin-left: 4.4%;
   font-size: 18px;
 }
 
+/* to-do list elements */
 #schedule-list {
   margin-left: 9%;
   font-size: 18px;
