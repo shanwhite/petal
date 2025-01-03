@@ -10,20 +10,20 @@ npm start
 ```
 
 ## Authors
-[Khate Castelo](https://github.com/khatington)
-[Shannen White](https://github.com/shanwhite)
-[Ashley Macaspac](https://github.com/kate-ash21)
+[Khate Castelo](https://github.com/khatington)<br />
+[Shannen White](https://github.com/shanwhite)<br />
+[Ashley Macaspac](https://github.com/kate-ash21)<br />
 [Sam McGrath](https://github.com/sammcg04)
 
 ## Functionalities List
-using an API
-using a database (Firebase)
-✓ source of external JSON
-✓ conditional rendering
-✓ project specific sorting, filtering, searching
-using a selection of user interface (UI) elements
-parent-child communication
-using multiple components
-✓ using react router
-developing your own computation or algorithms
+using an API<br />
+✓ using a database (Firebase)<br />
+✓ source of external JSON<br />
+✓ conditional rendering<br />
+✓ project specific sorting, filtering, searching<br />
+using a selection of user interface (UI) elements<br />
+parent-child communication<br />
+using multiple components<br />
+✓ using react router<br />
+developing your own computation or algorithms<br />
 sensible mixture of functional and class-based components
