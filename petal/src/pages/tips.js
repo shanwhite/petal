@@ -69,7 +69,7 @@ function Tips() {
       {/*RENDER PET LIST*/}
       <div>
         {/* START OF TABLE */}
-      <table style={{ borderCollapse: "collapse", width: "100%" }}>
+      <table>
         <tbody>
           {(search ? filteredPets : petData).map((pet, index) => (
             <tr key={index} className="detail-rows">

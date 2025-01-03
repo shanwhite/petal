@@ -9,7 +9,7 @@ const table = () => {
     // main container holding all contents
     <div className="pet-container">
         {/* START OF TABLE */}
-      <table style={{ borderCollapse: "collapse", width: "100%" }}>
+      <table>
         <tbody>
             {/* Used map function to render all pet data from JSON file */}
             {petData.map((pet, index) => (
