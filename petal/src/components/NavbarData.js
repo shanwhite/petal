@@ -25,8 +25,8 @@ export const NavbarData = [
         name: "nav-text",
     },
     {
-        title: "Tips",
-        path: "/tips",
+        title: "Pet Details",
+        path: "/details",
         icon: <RiLightbulbFill />,
         name: "nav-text",
     },

@@ -37,7 +37,7 @@ function Navbar() {
                         {NavbarData.map((item, index) => {
                             return (
                                 <div className="tabs">
-                                    {/* list of pages (home, pets, schedule, tips) */}
+                                    {/* list of pages (home, pets, schedule, pet details) */}
                                     <li key={index} className={item.name}>
                                         <Link to={item.path}>
                                         {item.icon}
@@ -45,7 +45,6 @@ function Navbar() {
                                         </Link>
                                     </li>
                                 </div>
-                                
                             )
                         })}
                     </ul>
