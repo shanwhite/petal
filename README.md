@@ -1,6 +1,6 @@
 # Petal
 Petal is a Pet Care Assistant app which keeps track of all pet-related responsibilities, including feeding, grooming, vet appointments, and walks.<br /><br />
-Its key features include a schedule for feeding and exercises, reminders for medication, milestone tracking for vaccinations, and pet-related tips.
+Its key features include a schedule with to-do lists for each pet, detailed pet profiles, and a powerful search feature to find specific pets by name, gender, breed, or age.
 
 ## Installation
 ```
@@ -10,10 +10,10 @@ npm start
 ```
 
 ## Authors
-[Khate Castelo](https://github.com/khatington)<br />
-[Shannen White](https://github.com/shanwhite)<br />
-[Ashley Macaspac](https://github.com/kate-ash21)<br />
-[Sam McGrath](https://github.com/sammcg04)
+Khate Castelo<br />
+Shannen White<br />
+Ashley Macaspac<br />
+Sam McGrath
 
 ## Functionalities List
 using an API<br />

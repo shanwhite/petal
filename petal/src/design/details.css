@@ -19,16 +19,16 @@
 
 /* removing a color or decoration on the scrollbar */
 .detail-container::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-.detail-container::-webkit-scrollbar {
-    background: transparent;
-    border: none; 
+  width: 8px;
 }
   
 .detail-container::-webkit-scrollbar {
-    background: transparent;
+  background: transparent;
+  border: none; 
+}
+  
+.detail-container::-webkit-scrollbar {
+  background: transparent;
 } 
 
 .header-container {
