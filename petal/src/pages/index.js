@@ -40,7 +40,7 @@ function Home() {
                         <h1>What are we about?</h1>
                         <p><u>Petal</u> is a Pet Care Assistant app which keeps track of all pet-related responsibilities, including feeding, grooming, vet appointments, and walks.<br /><br />
                         Its key features include a schedule for feeding and exercises, reminders for medication, milestone tracking for vaccinations, and pet-related tips.</p><br/>
-                        <div className="cat">⊹₊ ⋆*ฅ^•ﻌ•^ฅ*₊⋆⊹</div>
+                        <div className="cat">⊹₊⋆*ฅ^•ﻌ•^ฅ*₊⋆⊹</div>
                         <p>Have fun exploring our application!</p>
                         </div>
                     </div>
@@ -48,9 +48,13 @@ function Home() {
             </section>
         <section className="banner2">
             <div className="square"><h1>How it works</h1></div>
-            <div className="rectangle2"></div>
-            <div className="rectangle2"></div>
-            <div className="rectangle2"></div>
+            <div className="square2"><h1>My Pets</h1>
+            <p>This section allows you to view your selection of breeds. Here, you can learn more about your pet including their likes and dislikes. </p>
+            </div>
+            <div className="square2"><h1>Schedule</h1>
+            <p>This section </p>
+            </div>
+            <div className="square2"><h1>Pet Details</h1><p>This section features a search engine that allows you to find information faster</p></div>
         </section>
     </div>
     );
