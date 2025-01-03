@@ -17,7 +17,7 @@ npm start
 
 ## Functionalities List
 using an API<br />
-using a database (Firebase)<br />
+✓ using a database (Firebase)<br />
 ✓ source of external JSON<br />
 ✓ conditional rendering<br />
 ✓ project specific sorting, filtering, searching<br />

@@ -283,9 +283,10 @@ span {
 /* CALENDAR CSS */
 #calendar, #event-box {
   position: relative;
-  height: 86%;
+  height: 80%;
   width: 40%;
   padding: 0.5em;
+  flex-direction: column;
   background-color: #faf9f6; /*off white color*/
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
@@ -333,8 +334,8 @@ span {
 .react-calendar__navigation {
   display: flex;
   height: auto;
-  margin-top: 0.55em;
-  margin-bottom: 0.55em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   justify-content: space-between;
 }
 
@@ -397,6 +398,7 @@ span {
 
 #schedule-details {
   text-align: justify;
+  font-size: 21px;
 }
 
 .details {

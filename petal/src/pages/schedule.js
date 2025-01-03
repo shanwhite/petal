@@ -23,9 +23,9 @@ function Schedule() {
                   {petData.map((pet, index) => (
                      <tr key={index}>
                         <td id="schedule-details">
-                           <div><span>Name: </span><div className="details">{pet.name}</div></div>
-                           <div><span>Breed: </span><div className="details">{pet.breed}</div></div>
-                           <div><span>Schedule: </span>
+                           <div><span style={{fontWeight:"bold"}}>Name: </span><div className="details">{pet.name}</div></div>
+                           <div><span style={{fontWeight:"bold"}}>Breed: </span><div className="details">{pet.breed}</div></div>
+                           <div><span style={{fontWeight:"bold"}}>Schedule: </span>
                               {pet.toDoList.map((toDo, i) => (
                                 <li key={i} id="schedule-list">{toDo}</li>
                               ))}
