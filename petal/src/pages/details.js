@@ -110,7 +110,7 @@ function Tips() {
                 </td>
                 {/*Used nested mapping to access the to-do list*/}
                 <td>
-                  <span style={{position: "relative", top: "-15px", left: "-15px"}}>To-do List ☑</span>
+                  <span style={{position: "relative", top: "-15px", left: "-15px"}}>To-Do List ☑</span>
                   <ul>
                     {pet.toDoList.map((list, i) => (
                       <li key={i}>{list}</li>

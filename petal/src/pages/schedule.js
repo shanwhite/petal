@@ -20,13 +20,19 @@ function Schedule() {
             <p id="event-date">{date.toLocaleDateString()}</p>
             <table>
                <tbody>
-                  {petData.map((pet, index) => (
+                  {petData
+                  .filter((pet) => pet.careDate === date.toLocaleDateString())
+                  .map((pet, index) => (
                      <tr key={index}>
                         <td id="schedule-details">
                            <div><span style={{fontWeight:"bold"}}>Name: </span><div className="details">{pet.name}</div></div>
+                           <br />
                            <div><span style={{fontWeight:"bold"}}>Breed: </span><div className="details">{pet.breed}</div></div>
-                           <div><span style={{fontWeight:"bold"}}>Schedule: </span>
-                              {pet.toDoList.map((toDo, i) => (
+                           <br />
+                           <div><span style={{fontWeight:"bold"}}>To-Do List: </span>
+                              {pet.toDoList
+                              // render all properties of toDoList from pets.js
+                              .map((toDo, i) => (
                                 <li key={i} id="schedule-list">{toDo}</li>
                               ))}
                            </div>
